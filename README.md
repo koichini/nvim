@@ -2,7 +2,7 @@
 `~/.config/nvim`ディレクトリをこのrepoに差し替え
 
 ## Tips
-[Document](https://nvchad.com/docs/quickstart/install)
+[Document](https://nvchad.com/docs/quickstart/install)  
 luaでの設定の書き方  
 [Lua-guide - Neovim docs](https://neovim.io/doc/user/lua-guide.html#lua-guide)
 
