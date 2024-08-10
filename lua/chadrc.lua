@@ -5,12 +5,47 @@
 local M = {}
 
 M.base46 = {
-	theme = "onedark",
+  theme = "everforest",
 
-	-- hl_override = {
-	-- 	Comment = { italic = true },
-	-- 	["@comment"] = { italic = true },
-	-- },
+  -- hl_override = {
+  -- Comment = { italic = true },
+  -- ["@comment"] = { italic = true },
+  -- },
+}
+
+M.ui = {
+  cmp = {
+    icons = true,
+    lspkind_text = true,
+    style = "default",
+  },
+
+  telescope = { style = "borderless" }, -- borderless / bordered
+
+  nvdash = {
+    load_on_startup = true,
+
+    header = {
+      "           ▄ ▄                   ",
+      "       ▄   ▄▄▄     ▄ ▄▄▄ ▄ ▄     ",
+      "       █ ▄ █▄█ ▄▄▄ █ █▄█ █ █     ",
+      "    ▄▄ █▄█▄▄▄█ █▄█▄█▄▄█▄▄█ █     ",
+      "  ▄ █▄▄█ ▄ ▄▄ ▄█ ▄▄▄▄▄▄▄▄▄▄▄▄▄▄  ",
+      "  █▄▄▄▄ ▄▄▄ █ ▄ ▄▄▄ ▄ ▄▄▄ ▄ ▄ █ ▄",
+      "▄ █ █▄█ █▄█ █ █ █▄█ █ █▄█ ▄▄▄ █ █",
+      "█▄█ ▄ █▄▄█▄▄█ █ ▄▄█ █ ▄ █ █▄█▄█ █",
+      "    █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█ █▄█▄▄▄█    ",
+    },
+
+    buttons = {
+      { "  Find File", "Spc f f", "Telescope find_files" },
+      { "󰈚  Recent Files", "Spc f o", "Telescope oldfiles" },
+      { "󰈭  Find Word", "Spc f w", "Telescope live_grep" },
+      { "  Bookmarks", "Spc m a", "Telescope marks" },
+      { "  Themes", "Spc t h", "Telescope themes" },
+      { "  Mappings", "Spc c h", "NvCheatsheet" },
+    },
+  },
 }
 
 return M
