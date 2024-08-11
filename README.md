@@ -1,8 +1,15 @@
-## Useage
+# NvChad
+[NvChad](https://nvchad.com/)を利用した個人用のrepo
+
+## 必要要件
+`Neovim 0.10`, `NerdFont`, `Ripgrep`, `LazyGit`  
+(windows: `mingw`, `GnuWin`)  
+https://nvchad.com/docs/quickstart/install
+
+## Installation
 `~/.config/nvim`ディレクトリをこのrepoに差し替え
 
 ## Tips
-[Document](https://nvchad.com/docs/quickstart/install)  
 luaでの設定の書き方: [Lua-guide - Neovim docs](https://neovim.io/doc/user/lua-guide.html#lua-guide)
 
 **This repo is supposed to used as config by NvChad users!**
