@@ -9,6 +9,11 @@ https://nvchad.com/docs/quickstart/install
 ## Installation
 `~/.config/nvim`ディレクトリをこのrepoに差し替え
 
+## 設定メモ
+`./lua/chadrc.lua` 主なユーザー設定を行う  
+`./lua/options.lua` インデントの設定  
+`./lua/configs/lspconfig.lua` LSPの設定  
+
 ## Tips
 luaでの設定の書き方: [Lua-guide - Neovim docs](https://neovim.io/doc/user/lua-guide.html#lua-guide)
 
