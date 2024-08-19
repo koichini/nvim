@@ -5,46 +5,39 @@
 local M = {}
 
 M.base46 = {
-  theme = "everforest",
-
-  -- hl_override = {
-  -- Comment = { italic = true },
-  -- ["@comment"] = { italic = true },
-  -- },
-}
-
-M.ui = {
   cmp = {
     icons = true,
     lspkind_text = true,
     style = "default",
   },
 
+  theme = "everforest",
+
   telescope = { style = "borderless" }, -- borderless / bordered
+}
 
-  nvdash = {
-    load_on_startup = true,
+M.nvdash = {
+  load_on_startup = true,
 
-    header = {
-      "           ▄ ▄                   ",
-      "       ▄   ▄▄▄     ▄ ▄▄▄ ▄ ▄     ",
-      "       █ ▄ █▄█ ▄▄▄ █ █▄█ █ █     ",
-      "    ▄▄ █▄█▄▄▄█ █▄█▄█▄▄█▄▄█ █     ",
-      "  ▄ █▄▄█ ▄ ▄▄ ▄█ ▄▄▄▄▄▄▄▄▄▄▄▄▄▄  ",
-      "  █▄▄▄▄ ▄▄▄ █ ▄ ▄▄▄ ▄ ▄▄▄ ▄ ▄ █ ▄",
-      "▄ █ █▄█ █▄█ █ █ █▄█ █ █▄█ ▄▄▄ █ █",
-      "█▄█ ▄ █▄▄█▄▄█ █ ▄▄█ █ ▄ █ █▄█▄█ █",
-      "    █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█ █▄█▄▄▄█    ",
-    },
+  header = {
+    "           ▄ ▄                   ",
+    "       ▄   ▄▄▄     ▄ ▄▄▄ ▄ ▄     ",
+    "       █ ▄ █▄█ ▄▄▄ █ █▄█ █ █     ",
+    "    ▄▄ █▄█▄▄▄█ █▄█▄█▄▄█▄▄█ █     ",
+    "  ▄ █▄▄█ ▄ ▄▄ ▄█ ▄▄▄▄▄▄▄▄▄▄▄▄▄▄  ",
+    "  █▄▄▄▄ ▄▄▄ █ ▄ ▄▄▄ ▄ ▄▄▄ ▄ ▄ █ ▄",
+    "▄ █ █▄█ █▄█ █ █ █▄█ █ █▄█ ▄▄▄ █ █",
+    "█▄█ ▄ █▄▄█▄▄█ █ ▄▄█ █ ▄ █ █▄█▄█ █",
+    "    █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█ █▄█▄▄▄█    ",
+  },
 
-    buttons = {
-      { "  Find File", "Spc f f", "Telescope find_files" },
-      { "󰈚  Recent Files", "Spc f o", "Telescope oldfiles" },
-      { "󰈭  Find Word", "Spc f w", "Telescope live_grep" },
-      { "  Bookmarks", "Spc m a", "Telescope marks" },
-      { "  Themes", "Spc t h", "Telescope themes" },
-      { "  Mappings", "Spc c h", "NvCheatsheet" },
-    },
+  buttons = {
+    { "  Find File", "Spc f f", "Telescope find_files" },
+    { "󰈚  Recent Files", "Spc f o", "Telescope oldfiles" },
+    { "󰈭  Find Word", "Spc f w", "Telescope live_grep" },
+    { "  Bookmarks", "Spc m a", "Telescope marks" },
+    { "  Themes", "Spc t h", "Telescope themes" },
+    { "  Mappings", "Spc c h", "NvCheatsheet" },
   },
 }
 
