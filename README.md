@@ -26,3 +26,18 @@ luaでの設定の書き方: [Lua-guide - Neovim docs](https://neovim.io/doc/use
 # Credits
 
 1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's . It made a lot of things easier!
+
+# Mason
+  Language Filter: press <C-f> to apply filter
+
+  Installed
+      eslint-lsp
+      gofumpt
+      gopls
+      json-lsp
+      lua-language-server
+      prettier
+      rust-analyzer
+      typescript-language-server
+
+
