@@ -4,7 +4,7 @@ require("nvchad.configs.lspconfig").defaults()
 local lspconfig = require "lspconfig"
 
 -- EXAMPLE
-local servers = { "html", "cssls", "tsserver", "gopls", "eslint", "volar", "rust_analyzer" }
+local servers = { "html", "cssls", "tsserver", "gopls", "eslint", "rust_analyzer" }
 local nvlsp = require "nvchad.configs.lspconfig"
 
 -- lsps with default config
@@ -27,15 +27,6 @@ lspconfig.html.setup {
 lspconfig.cssls.setup {
   capabilities = capabilities,
 }
-
-lspconfig.volar.setup({
-  filetypes = { 'vue', 'typescriptreact', 'javascriptreact', 'json' },
-  init_options = {
-    typescript = {
-      tsdk = vim.fn.expand(vim.loop.cwd() .. '/node_modules/typescript/lib')
-    }
-  }
-})
 
 lspconfig.tsserver.setup {
   on_attach = nvlsp.on_attach,
