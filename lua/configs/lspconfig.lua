@@ -4,7 +4,7 @@ require("nvchad.configs.lspconfig").defaults()
 local lspconfig = require "lspconfig"
 
 -- EXAMPLE
-local servers = { "html", "cssls", "tsserver", "gopls", "eslint" }
+local servers = { "html", "cssls", "tsserver", "gopls", "eslint", "rust_analyzer" }
 local nvlsp = require "nvchad.configs.lspconfig"
 
 -- lsps with default config
@@ -28,7 +28,6 @@ lspconfig.cssls.setup {
   capabilities = capabilities,
 }
 
--- configuring single server, example: typescript
 lspconfig.tsserver.setup {
   on_attach = nvlsp.on_attach,
   on_init = nvlsp.on_init,
@@ -83,6 +82,12 @@ lspconfig.gopls.setup {
 lspconfig.rust_analyzer.setup {
   settings = {
     ['rust-analyzer'] = {
+      cargo = {
+        allFeatures = true,  -- 全てのfeatureを有効化
+      },
+      checkOnSave = {
+        command = "clippy",  -- 保存時にclippyでコードチェック
+      },
       diagnostics = {
         enable = false;
       }
@@ -102,3 +107,4 @@ lspconfig.eslint.setup({
     end
   end,
 })
+
