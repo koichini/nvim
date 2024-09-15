@@ -44,11 +44,15 @@ lspconfig.tsserver.setup {
   --     },
   --   },
   -- },
-  -- filetypes = {
-  --   "javascript",
-  --   "typescript",
-  --   "vue",
-  -- },
+  filetypes = {
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "tsx",
+  },
+  cmd = { "typescript-language-server", "--stdio" },
 }
 
 -- Configure gopls specifically
