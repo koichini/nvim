@@ -26,6 +26,7 @@ lspconfig.html.setup {
 
 lspconfig.cssls.setup {
   capabilities = capabilities,
+  cmd = { "css-languageserver", "--stdio" },
 }
 
 lspconfig.tsserver.setup {
