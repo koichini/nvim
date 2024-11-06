@@ -9,6 +9,9 @@ map("i", "jk", "<ESC>")
 
 map({ "n", "v" }, "<leader>gg", ":LazyGit<CR>", { desc = "Open LazyGit" })
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+--
+-- ファイルパスを表示するマッピング
+map("n", "<leader>fp", ":echo expand('%:p')<CR>", { desc = "Show full file path" })
 
 -- GotoTab: Alt+1 ~ Alt+9 tab change
 for i = 1, 9, 1 do
